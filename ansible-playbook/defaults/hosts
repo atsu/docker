@@ -1,0 +1,5 @@
+# Default Inventory file is empty and only allows 'localhost' to be used
+# see https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+---
+all:
+  hosts:

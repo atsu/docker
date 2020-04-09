@@ -1,0 +1,9 @@
+---
+# Test Playbook
+
+- name: Verify that ansible will run a playbook
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: Testing!
+

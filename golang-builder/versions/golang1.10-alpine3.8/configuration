@@ -1,0 +1,2 @@
+TAGS=atsuio/golang-builder:go1.10-alpine3.8
+PUSH=true
