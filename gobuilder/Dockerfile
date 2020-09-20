@@ -3,20 +3,20 @@
 FROM golang:1.12.7-alpine3.10
 RUN apk add --no-cache \
     alpine-sdk=1.0-r0 \
-    git=2.22.0-r0 \
+    git=2.22.4-r0 \
     librdkafka-dev=1.0.1-r1 \
     librdkafka=1.0.1-r1 \
     libressl-dev=2.7.5-r0 \
     musl-dev=1.1.22-r3 \
-    openssh=8.0_p1-r0 \
+    openssh=8.1_p1-r0 \
     zlib-dev=1.2.11-r1
 
 COPY --from=atsuio/sqrl:v0.1905241804.0 /bin/sqrl /bin/
 
 ENV ATSU_BUILDER_TYPE=gobuilder
-ENV ATSU_BUILDER_VERSION=v0.1908271659.0-16-g4fce5af
+ENV ATSU_BUILDER_VERSION=66b538a-modified
 
-LABEL version="v0.1908271659.0-16-g4fce5af" builder="gobuilder"
+LABEL version="66b538a-modified" builder="gobuilder"
 
 VOLUME ["/src", "/dst"]
 WORKDIR /src

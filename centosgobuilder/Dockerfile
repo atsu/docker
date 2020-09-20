@@ -66,9 +66,9 @@ ENV LD_LIBRARY_PATH=/opt/rh/llvm-toolset-7/root/usr/lib64/:/usr/lib
 COPY --from=atsuio/sqrl:v0.1905241804.0 /bin/sqrl /bin/
 
 ENV ATSU_BUILDER_TYPE=centosgobuilder
-ENV ATSU_BUILDER_VERSION=v0.1908271659.0-19-gce68a28
+ENV ATSU_BUILDER_VERSION=66b538a-modified
 
-LABEL version="v0.1908271659.0-19-gce68a28" builder="centosgobuilder"
+LABEL version="66b538a-modified" builder="centosgobuilder"
 
 VOLUME ["/src", "/dst"]
 WORKDIR /src

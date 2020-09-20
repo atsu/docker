@@ -15,7 +15,7 @@ ENV LANG=en_US.UTF-8 LC_ALL=C.UTF-8 LANGUAGE=en_US.UTF-8
 
 COPY --from=0 /usr/local/bin/kafkacat /usr/local/bin/kafkacat
 
-RUN apk add --update --no-cache ca-certificates file=5.37-r0 curl=7.66.0-r0 \
+RUN apk add --update --no-cache ca-certificates file=5.37-r1 curl=7.66.0-r1 \
     librdkafka=1.0.1-r1 zsh=5.7.1-r0 jq=1.6-r0
 RUN mkdir /data /app /lib64 && \
     chmod a+rw /data && \
