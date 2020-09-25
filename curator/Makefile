@@ -1,4 +1,4 @@
-IMAGE_NAME=atsuio/curator
+IMAGE_NAME=ghcr.io/atsu/curator
 TEMPLATE_DIR=../build-templates
 
 kbuild: version

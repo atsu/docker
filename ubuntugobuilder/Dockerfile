@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y libbcc wget
 RUN wget -q https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz && tar -xzf go1.13.1.linux-amd64.tar.gz -C /usr/lib && \
 	ln /usr/lib/go/bin/go /usr/bin/go && rm -f go1.13.1.linux-amd64.tar.gz 
 
-COPY --from=atsuio/sqrl:v0.1905241804.0 /bin/sqrl /bin/
+COPY --from=ghcr.io/atsu/sqrl:v0.1905241804.0 /bin/sqrl /bin/
 
 ENV ATSU_BUILDER_TYPE=ubuntugobuilder
 ENV ATSU_BUILDER_VERSION=v0.1908271659.0-14-g79dfd84-modified

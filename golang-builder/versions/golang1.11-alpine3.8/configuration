@@ -1,2 +1,2 @@
-TAGS=atsuio/golang-builder:go1.11-alpine3.8
+TAGS=ghcr.io/atsu/golang-builder:go1.11-alpine3.8
 PUSH=true

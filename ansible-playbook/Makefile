@@ -1,5 +1,5 @@
 BUILDER_NAME=ansible-playbook
-IMAGE_NAME=atsuio/ansible-playbook
+IMAGE_NAME=ghcr.io/atsu/ansible-playbook
 TEMPLATE_DIR=../build-templates
 
 test: build

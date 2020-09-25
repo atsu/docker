@@ -1,4 +1,4 @@
-IMAGE_NAME=atsuio/debbuilder
+IMAGE_NAME=ghcr.io/atsu/debbuilder
 TEMPLATE_DIR=../build-templates
 
 kbuild: version

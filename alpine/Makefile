@@ -1,4 +1,4 @@
-IMAGE_NAME=atsuio/alpine
+IMAGE_NAME=ghcr.io/atsu/alpine
 TEMPLATE_DIR=../build-templates
 
 kbuild: version

@@ -1,4 +1,4 @@
-FROM atsuio/alpine
+FROM ghcr.io/atsu/alpine
 
 USER root
 

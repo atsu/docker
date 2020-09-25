@@ -1,4 +1,4 @@
-COPY --from=atsuio/sqrl:SQRL_VERSION /bin/sqrl /bin/
+COPY --from=ghcr.io/atsu/sqrl:SQRL_VERSION /bin/sqrl /bin/
 
 ENV ATSU_BUILDER_TYPE=BUILDER_TYPE
 ENV ATSU_BUILDER_VERSION=IMAGE_VERSION

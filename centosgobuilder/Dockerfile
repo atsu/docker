@@ -63,12 +63,12 @@ RUN git clone https://github.com/iovisor/bcc.git && cd bcc && git checkout v0.8.
 
 ENV LD_LIBRARY_PATH=/opt/rh/llvm-toolset-7/root/usr/lib64/:/usr/lib
 
-COPY --from=atsuio/sqrl:v0.1905241804.0 /bin/sqrl /bin/
+COPY --from=ghcr.io/atsu/sqrl:v0.1905241804.0 /bin/sqrl /bin/
 
 ENV ATSU_BUILDER_TYPE=centosgobuilder
-ENV ATSU_BUILDER_VERSION=66b538a-modified
+ENV ATSU_BUILDER_VERSION=5af05ce-modified
 
-LABEL version="66b538a-modified" builder="centosgobuilder"
+LABEL version="5af05ce-modified" builder="centosgobuilder"
 
 VOLUME ["/src", "/dst"]
 WORKDIR /src

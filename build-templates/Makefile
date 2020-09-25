@@ -24,7 +24,7 @@ run: build
 version:
 	$(eval IMAGE_VERSION = $(shell docker run --rm -v $$(dirname $$(pwd)):/src \
 		-e BUILD_ENV="$$(env | grep "USER\|TRAVIS\|ATSU")"  \
-		-e ATSU_MAJOR_VERSION=0 atsuio/sqrl info -v version))
+		-e ATSU_MAJOR_VERSION=0 ghcr.io/atsu/sqrl info -v version))
 	@echo $(IMAGE_VERSION)
 
 push: version
